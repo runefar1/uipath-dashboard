@@ -1,0 +1,188 @@
+15:40:00:845 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [4] System.IO.FileNotFoundException: Could not find file 'C:\Users\rune\AppData\Local\UiPath\UiStudio.settings'.
+File name: 'C:\Users\rune\AppData\Local\UiPath\UiStudio.settings'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at UiPath.Workflow.Configuration.UserSettingsProvider.get__rootDocument()
+15:40:00:845 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [4] System.IO.FileNotFoundException: Could not find file 'C:\Users\rune\AppData\Local\UiPath\UiStudio.settings'.
+File name: 'C:\Users\rune\AppData\Local\UiPath\UiStudio.settings'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at UiPath.Workflow.Configuration.UserSettingsProvider.get__rootDocument()
+15:40:02:702 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [10] System.IO.IOException: The process cannot access the file 'C:\Users\rune\AppData\Local\UiPath\UiPath\configuration.xml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at Catel.Data.ModelBaseExtensions.Save(ModelBase model, String filePath, ISerializer serializer)
+   at Catel.Configuration.ConfigurationService.SetValueToStore(ConfigurationContainer container, String key, String value)
+   at Catel.Configuration.ConfigurationService.SetValue(ConfigurationContainer container, String key, Object value)
+   at Orc.NuGetExplorer.NuGetConfigurationService.SetDestinationFolder(String value)
+15:40:03:157 => [INFO] [Orchestra.Services.ShellService] [10] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+15:40:03:329 => [INFO] [Orchestra.Services.ShellService] [7] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+15:40:08:678 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [10] System.IO.IOException: The process cannot access the file 'C:\Users\rune\AppData\Local\UiPath\Activities\UiPath.Core.Activities.18.2.6745.15248\lib\net452\UiPath.Core.Activities.Design.dll' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at NuGet.PhysicalFileSystem.AddFileCore(String path, Action`1 writeToStream)
+   at NuGet.PhysicalFileSystem.AddFile(String path, Stream stream)
+   at NuGet.FileSystemExtensions.AddFileWithCheck(IFileSystem fileSystem, String path, Func`1 streamFactory)
+   at NuGet.FileSystemExtensions.AddFiles(IFileSystem fileSystem, IEnumerable`1 files, String rootDir, Boolean preserveFilePath)
+   at NuGet.PhysicalFileSystem.AddFiles(IEnumerable`1 files, String rootDir)
+   at UiPath.NuGetHotFix.PackageManager.ExpandFiles(IPackage package)
+   at UiPath.NuGetHotFix.PackageManager.OnExpandFiles(PackageOperationEventArgs e)
+   at UiPath.NuGetHotFix.PackageManager.ExecuteInstall(IPackage package)
+   at UiPath.NuGetHotFix.PackageManager.Execute(PackageOperation operation)
+   at UiPath.NuGetHotFix.PackageManager.Execute(IPackage package, IPackageOperationResolver resolver)
+   at UiPath.NuGetHotFix.PackageManager.InstallPackage(IPackage package, FrameworkName targetFramework, Boolean ignoreDependencies, Boolean allowPrereleaseVersions, Boolean ignoreWalkInfo)
+   at UiPath.NuGetHotFix.PackageManager.InstallPackage(IPackage package, Boolean ignoreDependencies, Boolean allowPrereleaseVersions)
+   at UiPath.Project.ActivityPackageManager.<>c__DisplayClass23_0.<InstallStudioPackages>b__0()
+15:40:08:858 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [10] [ActivityPackageManager] Exception copying file C:\Users\rune\AppData\Local\Temp\nuget\UiPath.Core.Activities.18.2.6745.15248\lib\net452\UiPath.Core.dll : System.IO.IOException: The process cannot access the file 'C:\Users\rune\AppData\Local\UiPath\Activities\UiPath.Core.Activities.18.2.6745.15248\lib\net452\UiPath.Core.dll' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.FileInfo.CopyTo(String destFileName, Boolean overwrite)
+   at UiPath.Project.ActivityPackageManager.DirectoryCopy(String sourceDirName, String destDirName)
+15:40:15:888 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [7] CreateActivationContext default error: 14011
+15:40:15:930 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [13] CreateActivationContext default error: 14011
+15:42:17:907 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [9] IUpdateManager: Starting automatic update
+15:42:17:953 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [9] CheckForUpdateImpl: Generated new staging user ID: db583e48-a281-5d37-aa45-35982b2f8010
+15:42:18:000 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [9] CheckForUpdateImpl: Downloading RELEASES file from http://download.uipath.com/latest?timestamp=636709813378405579
+15:42:18:146 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [9] FileDownloader: Downloading url: http://download.uipath.com/latest/RELEASES?timestamp=636709813378405579&id=UiPath&localVersion=18.2.3&arch=amd64
+16:09:56:345 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [16] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+16:09:56:368 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [16] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy directory
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.CleanUp(String path, SvnCleanUpArgs args)
+   at UiPath.Project.SourceControl.SVNSourceControl.<CleanUpWorkspace>b__47_0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.CleanUpWorkspace()
+16:09:56:388 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [16] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+20:24:49:360 => [INFO] [Orchestra.Services.ShellService] [4] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+20:25:07:966 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [4] CreateActivationContext default error: 14011
+21:57:24:121 => [INFO] [Orchestra.Services.ShellService] [6] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+21:57:35:859 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [10] CreateActivationContext default error: 14011
+21:58:15:139 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [7] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+21:58:15:164 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [7] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy directory
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.CleanUp(String path, SvnCleanUpArgs args)
+   at UiPath.Project.SourceControl.SVNSourceControl.<CleanUpWorkspace>b__47_0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.CleanUpWorkspace()
+21:58:15:166 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [7] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+14:17:45:332 => [INFO] [Orchestra.Services.ShellService] [11] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+14:17:50:484 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [11] CreateActivationContext default error: 14011
+14:17:58:976 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [6] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+14:17:58:998 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [6] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy directory
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.CleanUp(String path, SvnCleanUpArgs args)
+   at UiPath.Project.SourceControl.SVNSourceControl.<CleanUpWorkspace>b__47_0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.CleanUpWorkspace()
+14:17:59:000 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [6] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+14:27:02:196 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [19] System.Activities.InvalidWorkflowException: The workflow has validation errors. Review and resolve them first. ---> System.Activities.ValidationException: Activity can only be inside a MonitorEvents
+   --- End of inner exception stack trace ---
+14:38:31:388 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [6] System.Activities.InvalidWorkflowException: The workflow has validation errors. Review and resolve them first. ---> System.Activities.ValidationException: Value for a required activity argument 'Text' was not supplied.
+   --- End of inner exception stack trace ---
+14:38:58:588 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [6] System.Activities.InvalidWorkflowException: The workflow has validation errors. Review and resolve them first. ---> System.Activities.ValidationException: Compiler error(s) encountered processing expression "Delete what".
+End of expression expected.
+
+   --- End of inner exception stack trace ---
+14:44:59:954 => [INFO] [Orchestra.Services.ShellService] [8] Starting UiPath Studio v18.2.3.0 (18.2.3+Branch.master.Sha.074b06717bcfe245b4de45fd6c2f06d6a58f4bbb)
+14:45:01:911 => [INFO] [UiPath.Workflow.Logging.StudioTraceListener] [8] CreateActivationContext default error: 14011
+14:45:10:079 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [18] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+14:45:10:080 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [18] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy directory
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.CleanUp(String path, SvnCleanUpArgs args)
+   at UiPath.Project.SourceControl.SVNSourceControl.<CleanUpWorkspace>b__47_0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.CleanUpWorkspace()
+14:45:10:081 => [WARNING] [UiPath.Workflow.Logging.StudioTraceListener] [18] SharpSvn.SvnInvalidNodeKindException: 'C:\Users\rune\Documents\UiPath\Test' is not a working copy
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, SvnException error, Object targets)
+   at SharpSvn.SvnClientArgs.HandleResult(SvnClientContext client, svn_error_t* error, Object targets)
+   at SharpSvn.SvnClient.Status(String path, SvnStatusArgs args, EventHandler`1 statusHandler)
+   at SharpSvn.SvnClient.GetStatus(String path, SvnStatusArgs args, Collection`1& statuses)
+   at UiPath.Project.SourceControl.SVNSourceControl.<>c__DisplayClass53_1.<GetSvnStatus>b__0()
+   at UiPath.Project.SourceControl.SVNSourceControl.SVNClientAction(Func`1 action)
+   at UiPath.Project.SourceControl.SVNSourceControl.GetSvnStatus(String path)
+14:45:59:277 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [8] System.NullReferenceException: Object reference not set to an instance of an object.
+   at UiPath.Workflow.Wizards.ElementRecordingInfo.SetIDesignActivityProperties(IDesignInfo info)
+14:47:49:411 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [13] System.NullReferenceException: Object reference not set to an instance of an object.
+   at UiPath.Workflow.Wizards.ElementRecordingInfo.SetIDesignActivityProperties(IDesignInfo info)
+15:30:15:054 => [ERROR] [UiPath.Workflow.Logging.StudioTraceListener] [11] System.Activities.InvalidWorkflowException: The workflow has validation errors. Review and resolve them first. ---> System.Activities.ValidationException: Compiler error(s) encountered processing expression "Test".
+'Test' is not declared. It may be inaccessible due to its protection level.
+
+   --- End of inner exception stack trace ---
