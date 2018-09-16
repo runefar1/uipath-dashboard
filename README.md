@@ -1,6 +1,6 @@
 # UIPATH DASHBOARD
 
-This is a Kibana Dashboard customized for UIPath logs.
+This is a Kibana Dashboard customized for UiPath logs.
 It is implemented as an ELK Stack using ElasticSearch, LogStash and Kibana.
 
 ## Quick Start
